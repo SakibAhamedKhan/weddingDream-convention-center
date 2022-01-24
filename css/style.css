@@ -1,0 +1,8 @@
+/* google font link */
+* {
+	font-family: 'Poppins', sans-serif;
+}
+
+.image-slider-wh {
+	object-fit: cover;
+}
