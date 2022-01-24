@@ -3,6 +3,40 @@
 	font-family: 'Poppins', sans-serif;
 }
 
+/* Home section */
 .image-slider-wh {
 	object-fit: cover;
+}
+
+/* Choose Plan section */
+.choosed-plan-custom {
+
+	justify-content: space-between !important;
+	transition: all 0.5s ease-in-out;
+}
+
+.choosed-plan-custom:hover {
+	background: #3F87F5 !important;
+	color: white;
+	transform: scale(1.120);
+	box-shadow: 0px 42px 34px rgba(63, 135, 245, 0.25);
+
+}
+
+.choosed-plan-custom:hover .fa-check-circle {
+	color: white !important;
+}
+
+.choosed-plan-custom:hover .choose-plan-badge-custom {
+	display: block !important;
+}
+
+
+@media screen and (max-width:600px) {
+	.nav-logo-custom {
+		font-size: 14px !important;
+		word-wrap: break-word;
+	}
+
+
 }
