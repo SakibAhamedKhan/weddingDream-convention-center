@@ -10,7 +10,6 @@
 
 /* Choose Plan section */
 .choosed-plan-custom {
-
 	justify-content: space-between !important;
 	transition: all 0.5s ease-in-out;
 }
@@ -23,7 +22,7 @@
 
 }
 
-.choosed-plan-custom:hover .fa-check-circle {
+.choosed-plan-custom:hover .fa-check {
 	color: white !important;
 }
 
@@ -38,5 +37,19 @@
 		word-wrap: break-word;
 	}
 
+	.our-package-title-custom {
+		font-size: 10px !important;
+	}
+
+	.choose-plan-button {
+		font-size: 14px !important;
+	}
+}
+
+@media screen and (max-width:768px) {
+
+	.our-package-title-custom {
+		font-size: 24px !important;
+	}
 
 }
