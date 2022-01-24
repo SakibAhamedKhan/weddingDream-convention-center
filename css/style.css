@@ -34,6 +34,15 @@
 	display: block !important;
 }
 
+/* About us style */
+.about-section-part-coustom {
+	transition: all 0.5s ease-in-out;
+}
+
+.about-section-part-coustom:hover {
+	background-color: #4b92fde4 !important;
+}
+
 /* footer styles */
 .apple-button {
 	background-color: black !important;
@@ -71,7 +80,9 @@
 
 @media screen and (max-width:768px) {
 
-	.our-package-title-custom {
+	.our-package-title-custom,
+	.faq-title-custom,
+	.about-us-title-custom {
 		font-size: 24px !important;
 	}
 

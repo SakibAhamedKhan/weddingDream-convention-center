@@ -20,10 +20,10 @@
 	<header>
 		<!-- Nav bar -->
 		<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-			<div class="container">
-				<a class="navbar-brand fw-bold text-wrap nav-logo-custom" href="#">WeddingDream
+			<div class="container mx-auto">
+				<a class="navbar-brand fw-bold text-wrap nav-logo-custom m-0" href="#">WeddingDream
 					Convention Center</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				<button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
 					data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
 					aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -31,16 +31,17 @@
 				<div class="collapse navbar-collapse" id="navbarText">
 					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#">Home</a>
+							<a class="nav-link active" aria-current="page"
+								href="#home">Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Our Package</a>
+							<a class="nav-link" href="#package">Our Package</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">About Us</a>
+							<a class="nav-link" href="#about">About Us</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">FAQ</a>
+							<a class="nav-link" href="#faq">FAQ</a>
 						</li>
 					</ul>
 				</div>
@@ -50,7 +51,7 @@
 	</header>
 	<main>
 		<!-- Home section -->
-		<section class=".container-fluid">
+		<section id="home" class=".container-fluid">
 			<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
 				<div class="carousel-indicators">
 					<button type="button" data-bs-target="#carouselExampleCaptions"
@@ -116,9 +117,31 @@
 			</div>
 		</section>
 
+		<!-- Toast section -->
+		<section class=" sticky-top w-100 d-flex justify-content-end"
+			style="z-index: 2;cursor: pointer; top: 50px;">
+			<div class="bg-white mt-5 ms-2 me-4 toast show align-items-center border-5 border-primary border-top-0 border-end-0 border-bottom-0"
+				role="alert" aria-live="assertive" aria-atomic="true">
+				<div class="d-flex">
+					<div class="toast-body tex d-flex justify-content-center align-items-center">
+						<div class="ps-3 me-4">
+							<img src="icons/Vector.svg" alt="">
+						</div>
+						<div>
+							<p class="m-0">20% off on next booking</p>
+						</div>
+					</div>
+					<button type="button" class="btn-close me-3 m-auto" data-bs-dismiss="toast"
+						aria-label="Close"></button>
+				</div>
+			</div>
+		</section>
+
+
 		<!-- Our Package section -->
-		<section class="container" style="margin-top: 100px;">
-			<h1 class="text-center fw-bold mb-5 our-package-title-custom">Our Package
+		<section id="package" class="container" ;">
+			<h1 class="text-center fw-bold mb-5 our-package-title-custom" style="padding-top: 60px;">Our
+				Package
 			</h1>
 			<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-5 mx-4 mx-md-3 mx-lg-0">
 				<div class="col">
@@ -246,12 +269,83 @@
 			</div>
 		</section>
 
+
+		<!-- About us section -->
+		<section id="about" class="container">
+			<h1 class="text-center fw-bold mb-5 about-us-title-custom" style="padding-top: 100px;">
+				Sustainability in Us</h1>
+			<p class="fs-5 mb-5 mx-3 mx-sm-3" style="text-align: justify;">The WeddingDream Convention
+				Center recently
+				received certification from Marion
+				County as an
+				EarthWISE business. EarthWISE certification is a free program that recognizes businesses
+				in Marion County that have made a commitment to environmentally friendly practices. To
+				obtain EarthWISE certification, a business must meet criteria for recycling, waste
+				reduction and prevention, environmentally preferable purchasing, energy efficiency and
+				conservation, and water pollution prevention. The Marion County Public Works Department
+				– Environmental Services staff conduct an on-site assessment to determine EarthWISE
+				certification and certification is valid for two years from the certification date...
+				<br> <a href="#" style="text-decoration: none;">Read More</a>
+			</p>
+			<div
+				class="mb-5 row row-cols-xl-6 row-cols-lg-4 row-cols-md-3 row-cols-sm-1 row-cols-1 gx-3 mx-5 mx-sm-5">
+				<div class="col mb-3">
+					<div
+						class="bg-primary text-white d-flex flex-column align-items-center justify-content-center p-4 rounded about-section-part-coustom">
+						<i class="fas fa-heart fs-1"></i>
+						<p class="m-0 mt-3">Weddings</p>
+					</div>
+				</div>
+				<div class="col mb-3">
+					<div
+						class="bg-primary text-white d-flex flex-column align-items-center justify-content-center p-4 rounded about-section-part-coustom">
+						<i class="fas fa-hotel fs-1"></i>
+						<p class="m-0 mt-3">Hotel</p>
+					</div>
+				</div>
+				<div class="col mb-3">
+					<div
+						class="bg-primary text-white d-flex flex-column align-items-center justify-content-center p-4 rounded about-section-part-coustom">
+						<i class="fas fa-utensils fs-1"></i>
+						<p class="m-0 mt-3">Restaurant</p>
+					</div>
+				</div>
+				<div class="col mb-3">
+					<div
+						class="bg-primary text-white d-flex flex-column align-items-center justify-content-center p-4 rounded about-section-part-coustom">
+						<i class="fas fa-pizza-slice fs-1"></i>
+						<p class="m-0 mt-3">Catering</p>
+					</div>
+				</div>
+				<div class="col mb-3">
+					<div
+						class="bg-primary text-white d-flex flex-column align-items-center justify-content-center p-4 rounded about-section-part-coustom">
+						<i class="fas fa-calendar-day fs-1"></i>
+						<p class="m-0 mt-3">Social Events</p>
+					</div>
+				</div>
+				<div class="col mb-3">
+					<div
+						class="bg-primary text-white d-flex flex-column align-items-center justify-content-center p-4 rounded about-section-part-coustom">
+						<i class="fas fa-users fs-1"></i>
+						<p class="m-0 mt-3">Meetings</p>
+					</div>
+				</div>
+
+
+
+
+
+
+			</div>
+		</section>
 		<!-- FAQ section -->
-		<section class="container mb-5 h-50" style="margin-top:100px;">
-			<h1 class="text-center fw-bold mb-5 our-package-title-custom">Frequently Asked Questions
+		<section id="faq" class="container mb-5 h-50">
+			<h1 class="text-center fw-bold mb-5 faq-title-custom" style="padding-top: 100px;">Frequently
+				Asked Questions
 			</h1>
 			<div class="card border-0">
-				<div class="row g-5 align-items-center">
+				<div class="row g-md-5 g-lg-5 g-xl-5 align-items-center">
 					<div class="col-md-12 col-lg-7 h-100 order-lg-1 order-md-2 order-sm-2 order-2">
 						<div class="accordion" id="accordionExample">
 							<div class="accordion-item">
@@ -363,9 +457,9 @@
 						</div>
 					</div>
 					<div
-						class="col-md-12 col-lg-5 order-lg-2 order-md-1 order-sm-1 order-1 d-flex align-items-center">
-						<img src="images/people.png" class="img-fluid rounded mx-auto  d-block"
-							alt="...">
+						class="col-md-12 col-lg-5 order-lg-2 order-md-1 order-sm-1 order-1 d-flex align-items-center mb-3">
+						<img src="images/people.png"
+							class="p-0 img-fluid rounded mx-auto  d-block" alt="...">
 					</div>
 				</div>
 			</div>
@@ -377,7 +471,9 @@
 			<div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-2 container mx-auto">
 				<div
 					class="col footer-text d-flex align-items-center justify-content-center justify-content-sm-center justify-content-lg-start justify-content-md-start order-2 order-sm-2 order-md-1 order-lg-1 order-xl-1">
-					<p class="text-white py-5 m-0" style="color: #D9DBE1 !important;">© 2020 bike.
+					<p class="text-white text-center py-5 m-0" style="color: #D9DBE1 !important;">©
+						2022
+						WeddingDream
 						All rights
 						reserved
 					</p>
